@@ -1,1 +1,1 @@
-#This is the repository project based learning and revising the technologies from basic to full stack 
+# This is the repository project based learning and revising the technologies from basic to full stack 

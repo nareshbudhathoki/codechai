@@ -84,3 +84,26 @@ header section div button:hover{
   transform: scale(1.04);
   cursor: pointer;
 }
+
+.client{
+  text-align: center;
+  margin:20px 0;
+}
+
+
+.client-logo{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 5%;
+  justify-content: space-evenly;
+  border: 2px solid rgb(82, 80, 80);
+  padding: 30px 20px;
+  border-radius: 5px;
+
+}
+
+.client-logo img{
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}

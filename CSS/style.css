@@ -85,6 +85,8 @@ header section div button:hover{
   cursor: pointer;
 }
 
+
+
 .client{
   text-align: center;
   margin:20px 0;
@@ -96,14 +98,88 @@ header section div button:hover{
   flex-wrap: wrap;
   margin: 40px 5%;
   justify-content: space-evenly;
-  border: 2px solid rgb(82, 80, 80);
-  padding: 30px 20px;
+  border: 2px solid rgb(245, 239, 239);
   border-radius: 5px;
-
+  padding: 30px 20px;
+  transition: all 0.3s ease;
 }
 
 .client-logo img{
-  width: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: fill;
+  transition: all 0.3s ease-in;
+  border: 2px solid rgb(245, 239, 239);
+}
+
+.client-logo img:hover{
+  transform: scale(1.05);
+  border-radius: 10px;
+  border: 2px solid rgb(151, 149, 149);
+  box-shadow: 0 0 10px 1px rgb(174, 170, 170);
+}
+
+/* card section starts from here */
+
+.card-section{
+  display: flex;
+  gap: 10px;
+  margin: 40px 5%;
+  justify-content: space-evenly;
+  padding: 30px 100px;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+  border: 2px solid rgb(245, 239, 239);
+  border-radius: 5px;
+}
+
+.products{
+  text-align: center;
+}
+
+.card-section:hover,.card:hover, .client-logo:hover{
+  border: 2px solid rgb(174, 170, 170);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px rgb(174, 170, 170);
+}
+
+.card{
+    /* padding-bottom: 5px; */
+  border: 2px solid rgb(245, 239, 239);
+    width: 30%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+
+.card img{
+  width: 75%;
+  height: 250px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+  border: 2px solid rgb(245, 239, 239);
+  margin-bottom: 15px;
+  object-fit: fill;
+}
+
+.card h3,p{
+  margin: 10px 0;
+  padding: 0 5px;
+}
+
+
+.card img:hover{
+  transform: scale(1.05);
+  border-radius: 10px;
+  border: 2px solid rgb(151, 149, 149);
+  box-shadow: 0 0 10px 1px rgb(174, 170, 170);
+}
+
+/* media queries */
+
+@media screen and{
+  
 }

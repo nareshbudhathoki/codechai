@@ -19,7 +19,7 @@ nav div ul{
   display: flex;
   justify-content: space-between;
   list-style: none;
-  gap: 10px;
+  gap: 40px;
 }
 
 nav div button, button{
@@ -43,4 +43,44 @@ header section div button:hover{
 
 .hero{
   display: flex;
+  background-color: rgb(43, 42, 42);
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  color: rgb(224, 221, 221);
+  padding: 40px 80px;
+}
+
+.hero div{
+  flex: 1;
+}
+
+.left h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.left p{
+  font-size: 1.2rem;
+  color: rgb(162, 165, 165);
+  margin-bottom: 1rem;
+}
+
+.left button{
+  padding: 8px 16px;
+  width: 200px;
+}
+.right img{
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px white;
+  object-fit: cover;
+  transition: transform 0.3s ease-in;
+
+}
+
+.right img:hover{
+  transform: scale(1.04);
+  cursor: pointer;
 }

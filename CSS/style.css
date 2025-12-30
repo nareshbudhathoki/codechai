@@ -74,7 +74,7 @@ header section div button:hover{
 .right img{
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 0 10px 5px white;
+  box-shadow: 0 0 10px 5px rgb(10, 9, 9);
   object-fit: cover;
   transition: transform 0.3s ease-in;
 
@@ -179,7 +179,42 @@ header section div button:hover{
 }
 
 /* media queries */
+/* for very small mobile screen sizes */
 
-@media screen and{
+@media screen and(max-width:479px){
+  
+}
+
+/* for most of the phones */
+@media  screen and(max-width:639px) {
+  
+}
+
+/* for small tablets */
+@media  screen and(max-width:767px) {
+  
+}
+
+/* for ipad landscapes */
+
+@media screen and(max-width:1023px){
+  
+}
+
+/* for standard laptop */
+
+@media screen and(max-width:1279px){
+
+}
+
+/* for large screens */
+
+@media  screen and(max-width:1535px) {
+  
+}
+
+/* for very large monitors */
+
+@media screen and(min-width:1536px) {
   
 }

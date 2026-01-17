@@ -25,7 +25,7 @@ useEffect(()=>{
 
   return (
     <ThemeProvider value={{themeMode, darkTheme, lightTheme}}>
-      <h1 className="p-4 bg-green-500">Billionare Dollar</h1>
+      <h1 className="p-4 bg-green-500">Billion Dollar</h1>
 
       <div className="flex flex-wrap min-h-screen items-center">
         <div className="w-full">

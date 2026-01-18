@@ -1,0 +1,11 @@
+#container{
+  height: 200px;
+  width: 300px;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: beige;
+}

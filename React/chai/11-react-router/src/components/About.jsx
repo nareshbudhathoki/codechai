@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLaptopCode, FaUsers, FaProjectDiagram } from "react-icons/fa";
+import { Outlet } from "react-router-dom";
 
 export default function About() {
   return (
@@ -47,6 +48,7 @@ export default function About() {
           </p>
         </div>
       </div>
+      <Outlet/>
     </section>
   );
 }

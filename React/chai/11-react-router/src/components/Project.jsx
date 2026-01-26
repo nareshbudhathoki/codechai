@@ -28,10 +28,20 @@ const projects = [
 
 export default function Project() {
   return (
-    <section className="py-16 bg-gray-100">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+    <section className="py-20 bg-gray-950 text-white">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Section Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            My <span className="text-yellow-400">Projects</span>
+          </h2>
+          <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
+            A selection of projects I’ve built using modern web technologies.
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid gap-8 md:grid-cols-3">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

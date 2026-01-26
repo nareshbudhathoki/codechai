@@ -1,9 +1,12 @@
-*{
+*,
+*::after,
+*::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* mobile first design */
 nav{
   display: flex;
   background-color: rgb(43, 42, 42);
@@ -225,7 +228,6 @@ header section div button:hover{
   gap: 20px;
 }
 .card{
-    /* width: 90%; */
     height: 400px;
     text-align: center;
     padding: 10px 0;
@@ -235,29 +237,5 @@ header section div button:hover{
   height: 350px;
   margin: 15px;
 }
-  
-}
-
-/* for ipad landscapes */
-
-@media screen and (min-width:1023px){
-  
-}
-
-/* for standard laptop */
-
-@media screen and(min-width:1279px){
-
-}
-
-/* for large screens */
-
-@media  screen and(min-width:1535px) {
-  
-}
-
-/* for very large monitors */
-
-@media screen and(min-width:1536px) {
   
 }

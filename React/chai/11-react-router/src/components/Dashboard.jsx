@@ -10,27 +10,21 @@ export default function Dashboard() {
   ];
 
   return (
-    <section id="dashboard" className="bg-gray-100 dark:bg-gray-900 py-20 px-5">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12 text-gray-800 dark:text-gray-100">
-          Dashboard
+    <section className="py-8 md:py-12">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-white text-center md:text-left">
+          Dashboard Overview
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg flex flex-col items-center hover:scale-105 transform transition"
+              className="bg-gray-900 p-6 rounded-xl shadow-lg flex flex-col items-center hover:scale-105 transform transition duration-300"
             >
-              <div className="text-blue-600 dark:text-blue-400 text-4xl mb-4">
-                {stat.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                {stat.title}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400 font-bold text-2xl">
-                {stat.value}
-              </p>
+              <div className="text-yellow-400 text-4xl mb-3">{stat.icon}</div>
+              <h3 className="text-xl font-semibold text-white mb-1">{stat.title}</h3>
+              <p className="text-gray-400 font-bold text-2xl">{stat.value}</p>
             </div>
           ))}
         </div>

@@ -12,7 +12,7 @@ function NavOptions() {
     }`;
 
   return (
-    <nav className="bg-gray-900 fixed top-0 left-0 w-full z-50 shadow-md">
+    <nav className="bg-gray-900 sticky top-0 w-full z-50 shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           
@@ -29,16 +29,25 @@ function NavOptions() {
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-6 items-center">
             <li>
-              <NavLink to="/" className={navLinkClass}>Home</NavLink>
+              <NavLink to="/" className={navLinkClass}>
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about" className={navLinkClass}>About</NavLink>
+              <NavLink to="/about" className={navLinkClass}>
+                About
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" className={navLinkClass}>Contact</NavLink>
+              <NavLink to="/contact" className={navLinkClass}>
+                Contact
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/login" className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-yellow-300 transition">
+              <NavLink
+                to="/login"
+                className="bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-semibold hover:bg-yellow-300 transition"
+              >
                 Login
               </NavLink>
             </li>
@@ -48,6 +57,7 @@ function NavOptions() {
           <button
             className="md:hidden text-white text-2xl"
             onClick={() => setOpen(!open)}
+            aria-label="Toggle Menu"
           >
             ☰
           </button>
@@ -55,19 +65,31 @@ function NavOptions() {
 
         {/* Mobile Menu */}
         {open && (
-          <ul className="md:hidden bg-gray-800 rounded-lg mt-2 p-4 space-y-2">
+          <ul className="md:hidden bg-gray-800 rounded-lg mb-4 p-4 space-y-2">
             <li>
-              <NavLink onClick={() => setOpen(false)} to="/" className={navLinkClass}>
+              <NavLink
+                onClick={() => setOpen(false)}
+                to="/"
+                className={navLinkClass}
+              >
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink onClick={() => setOpen(false)} to="/about" className={navLinkClass}>
+              <NavLink
+                onClick={() => setOpen(false)}
+                to="/about"
+                className={navLinkClass}
+              >
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink onClick={() => setOpen(false)} to="/contact" className={navLinkClass}>
+              <NavLink
+                onClick={() => setOpen(false)}
+                to="/contact"
+                className={navLinkClass}
+              >
                 Contact
               </NavLink>
             </li>
